@@ -3,7 +3,7 @@ package phil.homework.threadingproject.ui.activity
 import android.Manifest
 import android.content.Intent
 import android.content.IntentFilter
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_receiver.*
 import phil.homework.threadingproject.R

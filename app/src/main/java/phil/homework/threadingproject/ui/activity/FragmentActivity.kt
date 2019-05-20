@@ -1,8 +1,8 @@
 package phil.homework.threadingproject.ui.activity
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.app.FragmentManager
+import androidx.fragment.app.FragmentManager
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_fragment.*
 import phil.homework.threadingproject.R
@@ -43,7 +43,7 @@ class FragmentActivity : AppCompatActivity(), DynamicFragment.OnFragmentInteract
                 .remove(dynamicFragment)
                 .addToBackStack("removeFragment")
                 .commit()
-            supportFragmentManager.popBackStack("addFragment", FragmentManager.POP_BACK_STACK_INCLUSIVE)
+            supportFragmentManager.popBackStack("addFragment", androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE)
             toast(headlessFragment.value)
         }
     }

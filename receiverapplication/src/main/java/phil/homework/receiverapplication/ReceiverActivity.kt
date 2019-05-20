@@ -2,7 +2,7 @@ package phil.homework.receiverapplication
 
 import android.Manifest
 import android.content.IntentFilter
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_receiver.*
 

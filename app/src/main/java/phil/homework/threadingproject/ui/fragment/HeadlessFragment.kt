@@ -1,9 +1,9 @@
 package phil.homework.threadingproject.ui.fragment
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 
-class HeadlessFragment: Fragment() {
+class HeadlessFragment: androidx.fragment.app.Fragment() {
     var value: String = "default value"
 
     override fun onCreate(savedInstanceState: Bundle?) {

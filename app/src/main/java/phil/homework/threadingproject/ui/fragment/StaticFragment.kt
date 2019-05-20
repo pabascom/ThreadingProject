@@ -1,4 +1,4 @@
-package phil.homework.threadingproject.fragment
+package phil.homework.threadingproject.ui.fragment
 
 
 import android.content.Context

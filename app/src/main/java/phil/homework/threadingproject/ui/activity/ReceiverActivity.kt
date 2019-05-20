@@ -1,4 +1,4 @@
-package phil.homework.threadingproject.activity
+package phil.homework.threadingproject.ui.activity
 
 import android.Manifest
 import android.content.Intent

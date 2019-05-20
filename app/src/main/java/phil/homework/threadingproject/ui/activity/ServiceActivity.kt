@@ -1,4 +1,4 @@
-package phil.homework.threadingproject.activity
+package phil.homework.threadingproject.ui.activity
 
 import android.app.job.JobInfo
 import android.app.job.JobScheduler

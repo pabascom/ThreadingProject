@@ -1,16 +1,10 @@
-package phil.homework.threadingproject.activity
+package phil.homework.threadingproject.ui.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.RandomUserResponse
-import io.reactivex.Observer
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_network.*
 import phil.homework.threadingproject.R
 import phil.homework.threadingproject.manager.NetworkManager
-import phil.homework.threadingproject.network.NativeNetworkHelper
 import phil.homework.threadingproject.network.OkHttpHelper
 import phil.homework.threadingproject.network.RetrofitHelper
 import phil.homework.threadingproject.rxjava.RxJavaHelper

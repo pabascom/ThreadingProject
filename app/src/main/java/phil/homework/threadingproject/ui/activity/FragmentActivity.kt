@@ -1,4 +1,4 @@
-package phil.homework.threadingproject.activity
+package phil.homework.threadingproject.ui.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -6,9 +6,9 @@ import android.support.v4.app.FragmentManager
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_fragment.*
 import phil.homework.threadingproject.R
-import phil.homework.threadingproject.fragment.DynamicFragment
-import phil.homework.threadingproject.fragment.HeadlessFragment
-import phil.homework.threadingproject.fragment.StaticFragment
+import phil.homework.threadingproject.ui.fragment.DynamicFragment
+import phil.homework.threadingproject.ui.fragment.HeadlessFragment
+import phil.homework.threadingproject.ui.fragment.StaticFragment
 import phil.homework.threadingproject.util.toast
 
 class FragmentActivity : AppCompatActivity(), DynamicFragment.OnFragmentInteractionListener {

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "571097381526",
+    "firebase_url": "https://threadingproject.firebaseio.com",
+    "project_id": "threadingproject",
+    "storage_bucket": "threadingproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571097381526:android:e9ff00a2451f6963",
+        "android_client_info": {
+          "package_name": "phil.homework.threadingproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571097381526-6kjmmo9kv7dt986ukgpiafjctqssiu0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "phil.homework.threadingproject",
+            "certificate_hash": "40a9e1ce8890f72350ce3f37ab965fd276812bdf"
+          }
+        },
+        {
+          "client_id": "571097381526-9h5etvilg34l7ic4fpitp9b1mob7c555.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAe-uXe_zQ2V7Qxnv34LFgTwhj4jTrOhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571097381526-9h5etvilg34l7ic4fpitp9b1mob7c555.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

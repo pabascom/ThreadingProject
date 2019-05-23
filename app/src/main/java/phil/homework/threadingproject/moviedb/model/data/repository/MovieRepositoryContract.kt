@@ -1,4 +1,7 @@
 package phil.homework.threadingproject.moviedb.model.data.repository
 
-interface MovieRepositoryContract {
+import phil.homework.threadingproject.moviedb.model.data.DataSource
+
+interface MovieRepositoryContract: DataSource {
+
 }

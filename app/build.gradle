@@ -22,6 +22,10 @@ android {
         }
     }
 
+    buildTypes.each {
+        it.buildConfigField 'String', "MOVIE_API_KEY", MOVIE_DB_KEY
+    }
+
     dataBinding {
         enabled true
     }

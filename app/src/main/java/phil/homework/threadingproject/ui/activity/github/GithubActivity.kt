@@ -10,16 +10,18 @@ import kotlinx.android.synthetic.main.activity_github.*
 import phil.homework.threadingproject.R
 import phil.homework.threadingproject.databinding.ActivityGithubBinding
 import phil.homework.week3test_gitcrawler.model.repo.Repository
+import retrofit2.CallAdapter
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 
 class GithubActivity : AppCompatActivity() {
 
-    lateinit var githubViewModel: GithubViewModel
+    val githubViewModel: GithubViewModel by lazy {
+        ViewModelProviders.of(this).get(GithubViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_github)
-
-        githubViewModel = ViewModelProviders.of(this).get(GithubViewModel::class.java)
 
         val githubBinding: ActivityGithubBinding = DataBindingUtil.setContentView(this, R.layout.activity_github)
         githubBinding.viewmodel = githubViewModel

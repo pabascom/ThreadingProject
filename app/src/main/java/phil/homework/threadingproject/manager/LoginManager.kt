@@ -9,9 +9,7 @@ import com.google.firebase.auth.FirebaseUser
 import phil.homework.threadingproject.util.toast
 
 @SuppressLint("StaticFieldLeak")
-object LoginManager {
-
-    lateinit var context: Context
+class LoginManager(val context: Context) {
 
     var auth = FirebaseAuth.getInstance()
 

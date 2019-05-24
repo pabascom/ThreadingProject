@@ -1,4 +1,4 @@
-package phil.homework.threadingproject.moviedb.ui.di.module
+package phil.homework.threadingproject.moviedb.di.module
 
 import dagger.Module
 import dagger.Provides

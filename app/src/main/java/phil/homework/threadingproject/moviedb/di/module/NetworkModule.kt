@@ -1,8 +1,9 @@
-package phil.homework.threadingproject.moviedb.ui.di.module
+package phil.homework.threadingproject.moviedb.di.module
 
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
+import phil.homework.threadingproject.moviedb.model.data.remote.MOVIE_BASE_URL
 import phil.homework.threadingproject.moviedb.model.data.remote.MOVIE_INTERCEPTOR
 import phil.homework.threadingproject.moviedb.model.data.remote.RemoteService
 import retrofit2.Retrofit
@@ -16,6 +17,7 @@ class NetworkModule {
     fun providesNetworkClient(client: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .client(client)
+            .baseUrl(MOVIE_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()

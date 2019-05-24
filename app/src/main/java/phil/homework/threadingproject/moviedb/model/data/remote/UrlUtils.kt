@@ -20,8 +20,6 @@ val MOVIE_INTERCEPTOR = Interceptor{chain ->
     val original = chain.request()
     val originalHttpUrl = original.url()
     val url = originalHttpUrl.newBuilder()
-        .scheme("https")
-        .host("api.themoviedb.org")
         .addQueryParameter("api_key", BuildConfig.MOVIE_API_KEY)
         .build()
 

@@ -27,13 +27,14 @@
         <activity android:name=".moviedb.ui.moviedetail.MovieDetailActivity">
         </activity>
         <activity android:name=".moviedb.ui.movielist.MovieListActivity">
-        </activity>
-        <activity android:name=".ui.activity.CustomViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.CustomViewActivity">
+
         </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

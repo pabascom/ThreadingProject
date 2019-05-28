@@ -2,9 +2,12 @@ package phil.homework.threadingproject
 
 import android.app.Application
 import android.content.Context
+import com.crashlytics.android.Crashlytics
+import io.fabric.sdk.android.Fabric
 import phil.homework.threadingproject.di.DaggerFirebaseComponent
 import phil.homework.threadingproject.di.FirebaseComponent
 import phil.homework.threadingproject.di.FirebaseModule
+import phil.homework.threadingproject.manager.AnalyticsManager
 import phil.homework.threadingproject.manager.CloudManager
 import phil.homework.threadingproject.manager.LoginManager
 import phil.homework.threadingproject.moviedb.di.component.ApplicationComponent
@@ -30,7 +33,9 @@ class ThreadingApp: Application() {
 
     override fun onCreate() {
         super.onCreate()
+        Fabric.with(applicationContext, Crashlytics())
         CloudManager.context = applicationContext
+        AnalyticsManager.init(applicationContext)
 
         appComponent = DaggerApplicationComponent.builder()
             .appModule(AppModule(this))
